@@ -46,7 +46,7 @@ mr. meeseek hair
 
 ![alt text](images/command%20bypassed.png)
 
-## revshell
+## Reverse Shell
 setup a netcat listener and put python3 Reverse shell command in panel
 
 ```bash
