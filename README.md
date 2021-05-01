@@ -1,2 +1,2 @@
-# tryhackme-writeups
-Some TryHackme lab writeups
+## TryHackMe Writeups
+  Some of my tryhackme lab notes
